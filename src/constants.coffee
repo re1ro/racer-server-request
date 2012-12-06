@@ -1,0 +1,1 @@
+exports.PRIVATE_COLLECTION = '_$serverRequests.'
