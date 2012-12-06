@@ -30,7 +30,7 @@ modelPlugin = module.exports = function(racer) {
       serverRequest: function(ns) {
         return {
           ns: ns,
-          arg: Array(arguments).slice(1)
+          arg: Array.apply(null, arguments).slice(1)
         };
       }
     }

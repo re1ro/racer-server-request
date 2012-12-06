@@ -26,7 +26,10 @@ storePlugin = module.exports = function(racer) {
           }
           handler.apply({
             session: req.session,
-            done: function(data) {
+            done: function(err, data) {
+              if (err) {
+                return res.fail(err);
+              }
               res.send([[PRIVATE_COLLECTION + ns, data]]);
               next();
             }
