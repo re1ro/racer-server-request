@@ -27,7 +27,9 @@ storePlugin = module.exports = (racer) ->
 
           handler.apply(
             session: req.session
-            done   : (data)->
+            done   : (err, data)->
+              return res.fail err if err
+
               res.send [
                 [PRIVATE_COLLECTION + ns, data]
               ]
