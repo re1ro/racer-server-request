@@ -7,7 +7,7 @@ modelPlugin = module.exports = (racer) ->
 
     decorate: (Model) ->
       Model.dataDescriptor
-        name      : 'Request'
+        name      : 'ServerRequest'
         normalize : (x)->x
         isInstance: (x)->x
 
@@ -21,7 +21,7 @@ modelPlugin = module.exports = (racer) ->
 
 
     proto:
-      request: (ns)->
+      serverRequest: (ns)->
         ns : ns,
         arg: Array(arguments).slice 1
   )
