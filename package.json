@@ -1,6 +1,6 @@
 {
   "name"   : "racer-server-request",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author" : "Kiryl Yermakou <rma4ok@gmail.com>",
 
   "repository"     : {
@@ -8,7 +8,7 @@
     "url" : "https://github.com/rma4ok/racer-server-request.git"
   },
   "description"    : "Request data from racer server",
-  "main"           : "./build",
+  "main"           : "./build/index.js",
   "dependencies"   : {
   },
   "devDependencies": {
