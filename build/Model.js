@@ -8,7 +8,7 @@ modelPlugin = module.exports = function(racer) {
     type: 'Model',
     decorate: function(Model) {
       return Model.dataDescriptor({
-        name: 'Request',
+        name: 'ServerRequest',
         normalize: function(x) {
           return x;
         },
@@ -27,7 +27,7 @@ modelPlugin = module.exports = function(racer) {
       });
     },
     proto: {
-      request: function(ns) {
+      serverRequest: function(ns) {
         return {
           ns: ns,
           arg: Array(arguments).slice(1)
