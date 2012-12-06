@@ -22,8 +22,8 @@ modelPlugin = module.exports = (racer) ->
 
     proto:
       serverRequest: (ns)->
-        ns : ns,
-        arg: Array(arguments).slice 1
+        ns : ns
+        arg: Array.apply(null, arguments).slice 1
   )
   return
 
