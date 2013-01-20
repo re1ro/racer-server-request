@@ -3,13 +3,13 @@ PRIVATE_COLLECTION = require('./constants').PRIVATE_COLLECTION
 
 storePlugin = module.exports = (racer) ->
   racer.mixin(
-    type  : "Store"
+    type: "Store"
     events:
       init: (store) ->
         store.serverRequest =
           _handlers:
             {}
-          register : (type, cb)->
+          register: (type, cb)->
             @_handlers[type] = cb
 
         return
@@ -27,7 +27,7 @@ storePlugin = module.exports = (racer) ->
 
           handler.apply(
             session: req.session
-            done   : (err, data)->
+            done: (err, data)->
               return res.fail err if err
 
               res.send [
@@ -45,8 +45,8 @@ storePlugin = module.exports = (racer) ->
 
     decorate: (Store) ->
       Store.dataDescriptor
-        name      : 'ServerRequest'
-        normalize : (x)->x
+        name: 'ServerRequest'
+        normalize: (x)->x
         isInstance: (x)->x
       return
   )
@@ -54,5 +54,5 @@ storePlugin = module.exports = (racer) ->
 
 storePlugin.decorate = "racer"
 storePlugin.useWith =
-  server : true
+  server: true
   browser: false
