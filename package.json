@@ -1,19 +1,25 @@
 {
-  "name"   : "racer-server-request",
+  "name": "racer-server-request",
   "version": "1.0.3",
-  "author" : "Kiryl Yermakou <rma4ok@gmail.com>",
+  "author": "Kiryl Yermakou <rma4ok@gmail.com>",
 
-  "repository"     : {
+  "repository": {
     "type": "git",
-    "url" : "https://github.com/rma4ok/racer-server-request.git"
+    "url": "https://github.com/rma4ok/racer-server-request.git"
   },
-  "description"    : "Request data from racer server",
-  "main"           : "./build/index.js",
-  "dependencies"   : {
+
+  "description": "Request data from racer server",
+  "keywords": [
+    "racer"
+  , "derby"
+  ],
+
+  "main": "./build/index.js",
+  "dependencies": {
   },
   "devDependencies": {
     "coffee-script": ">=1.4.0",
-    "grunt"        : "~0.3.17",
-    "grunt-shell"  : "https://github.com/rma4ok/grunt-shell/archive/master.tar.gz"
+    "grunt": "~0.3.17",
+    "grunt-shell": "https://github.com/rma4ok/grunt-shell/archive/master.tar.gz"
   }
 }
