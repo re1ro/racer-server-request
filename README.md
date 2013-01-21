@@ -71,15 +71,9 @@ You need to install grunt globally:
 $ npm i -g grunt
 ```
 
-* Compile coffee:
-
-```sh
-$ grunt
-```
-
 * Watch coffee:
 
 ```sh
-$ grunt run
+$ grunt
 ```
 
