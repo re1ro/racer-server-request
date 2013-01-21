@@ -20,6 +20,6 @@
   "devDependencies": {
     "coffee-script": ">=1.4.0",
     "grunt": "~0.3.17",
-    "grunt-shell": "https://github.com/rma4ok/grunt-shell/archive/master.tar.gz"
+    "grunt-bg-shell": "1.x.x"
   }
 }
