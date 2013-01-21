@@ -8,21 +8,15 @@ module.exports = function (grunt) {
   grunt.initConfig({
 
     bgShell: {
-      coffeeCompile: {
-        cmd: './node_modules/coffee-script/bin/coffee -b -o ./build -c ./src',
-        stdout: true,
-        stderr: true
-      },
-      coffeeWatch: {
-        cmd: './node_modules/coffee-script/bin/coffee -bw -o ./build -c ./src',
-        stdout: true,
-        stderr: true
+      watchCoffee: {
+        cmd: './node_modules/coffee-script/bin/coffee -bw -o ./build -c ./src'
       }
     }
+
   });
 
 
-  grunt.registerTask('default', 'bgShell:coffeeWatch');
+  grunt.registerTask('default', 'bgShell');
 
 
 };
