@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
   "use strict";
+  //cool stuff
 
   grunt.loadNpmTasks('grunt-bg-shell');
 
