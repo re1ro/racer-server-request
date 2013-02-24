@@ -66,9 +66,9 @@ app.get('/', function(page, model, params, next) {
 
 # Developing
 
-You need to install grunt globally:
+You need to install grunt command globally:
 ```sh
-$ npm i -g grunt
+$ npm i -g grunt-cli
 ```
 
 * Watch coffee:

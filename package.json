@@ -1,6 +1,6 @@
 {
   "name": "racer-server-request",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Kiryl Yermakou <rma4ok@gmail.com>",
 
   "repository": {
@@ -10,8 +10,8 @@
 
   "description": "Request data from racer server",
   "keywords": [
-    "racer"
-  , "derby"
+    "racer",
+    "derby"
   ],
 
   "main": "./build/index.js",
@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "coffee-script": ">=1.4.0",
-    "grunt": "~0.3.17",
-    "grunt-bg-shell": "1.x.x"
+    "grunt": "~0.4.0",
+    "grunt-bg-shell": "2.x.x"
   }
 }
